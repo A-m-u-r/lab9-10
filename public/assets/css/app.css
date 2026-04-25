@@ -1,0 +1,80 @@
+/* App-specific overrides on top of styles.css */
+
+.auth { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; justify-content: flex-end; max-width: 360px; }
+.auth__name { font-size: 13px; color: #00044c; font-weight: bold; white-space: nowrap; }
+.auth__role { font-weight: normal; color: #2b2586; font-size: 11px; margin-left: 4px; }
+.auth__sep { color: #00044c; }
+.auth__logout { display: inline; margin: 0; padding: 0; }
+.auth__link-btn {
+    background: none; border: none; cursor: pointer; padding: 0 4px;
+    color: #00044c; font-weight: bold; font-family: inherit; font-size: 14px;
+}
+.auth__link-btn:hover { text-decoration: underline; }
+
+/* Flash messages */
+.flash { padding: 12px 16px; margin: 12px 0; border-radius: 4px; font-size: 14px; }
+.flash--ok  { background: #e7f6ec; color: #1d6f3a; border: 1px solid #b6e2c4; }
+.flash--err { background: #fbeaea; color: #8a1f1f; border: 1px solid #f1b9b9; }
+
+/* Forms */
+.form { width: 60%; min-width: 300px; }
+.form__alt { margin-left: 16px; color: #20416c; font-size: 13px; }
+.form-group input.input--err,
+.form-group select.input--err,
+.form-group textarea.input--err { border-color: #c0392b; background: #fff7f7; }
+.form-group .err { color: #c0392b; font-size: 12px; margin-top: 4px; }
+.form-group .hint { display: block; color: #777; font-size: 12px; margin-top: 4px; }
+.form-group .radio { display: inline-flex; align-items: center; gap: 6px; margin-right: 16px; font-weight: normal; }
+.form-group input[type="number"] { width: 200px; }
+.form-group input[type="date"]   { width: 200px; }
+
+/* Buttons */
+.btn--small { padding: 4px 12px; font-size: 12px; }
+.btn--ghost { border-color: #888; color: #555; }
+.btn--ghost:hover { background: #888; color: #fff; }
+.inline-form { display: inline; margin: 0; padding: 0; width: auto; }
+
+/* Tables */
+.table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 14px; color: #20416c; }
+.table th, .table td { padding: 8px 10px; border-bottom: 1px solid #e1e1e1; text-align: left; vertical-align: top; }
+.table thead th { background: #20416c; color: #fff; }
+
+.muted { color: #888; font-style: italic; }
+.mt { margin-top: 24px; }
+.actions { margin-top: 8px; display: flex; gap: 8px; flex-wrap: wrap; }
+
+/* Driver/category extras */
+.driver-meta { margin-top: 12px; font-size: 14px; display: flex; gap: 24px; flex-wrap: wrap; }
+.driver-name--mc { color: #ffd56b; font-size: 18px; margin-top: -16px; margin-bottom: 14px; }
+
+.driver-right {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    min-width: 200px;
+    width: 200px;
+}
+.driver-right .driver-btn,
+.driver-right .driver-tag {
+    box-sizing: border-box;
+    height: 46px;
+    line-height: 22px;
+    padding: 10px 14px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.driver-tag { border: 2px dashed #fff; color: #fff; font-size: 13px; }
+.driver-tag--full { border-color: #ffb3b3; color: #ffb3b3; }
+.driver-right .driver-time { margin-top: 10px; }
+.content__img { float: left; max-width: 220px; margin: 0 20px 10px 0; }
+
+/* Cabinet improvements */
+.driver-page-table { width: 100%; }
+.driver-page-table tr td:last-child { width: 100%; }
+
+/* Confirm form */
+.confirm-form { margin-top: 16px; display: flex; gap: 12px; padding: 0; width: auto; }
+
