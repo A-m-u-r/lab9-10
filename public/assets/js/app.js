@@ -117,13 +117,14 @@ async function refreshSlots(form) {
     const date = dateEl.value;
     if (!date) return;
 
-    const params = new URLSearchParams({ p: 'api_slots', date });
+    const params = new URLSearchParams({ date });
     const editId = form.dataset.mcId;
     if (editId) params.set('exclude', editId);
+    const slotsUrl = form.dataset.slotsUrl || '/api/slots';
 
     let data;
     try {
-        const resp = await fetch('index.php?' + params.toString(), { credentials: 'same-origin' });
+        const resp = await fetch(slotsUrl + '?' + params.toString(), { credentials: 'same-origin' });
         if (!resp.ok) return;
         data = await resp.json();
     } catch (err) {
