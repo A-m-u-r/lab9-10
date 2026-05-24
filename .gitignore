@@ -12,6 +12,8 @@
 /.vscode
 /.zed
 /auth.json
+/submission-screenshots/
+/.demo-tools/
 /build/
 /node_modules
 /public/build
